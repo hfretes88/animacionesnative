@@ -12,7 +12,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   contenido: {
-    marginTop: 300
+    marginTop: 100
   }
 });
 
