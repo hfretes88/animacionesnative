@@ -1,2 +1,4 @@
 # animacionesnative
-Practicas de la animaciones en React Native
+
+Practicas de las animaciones de React Native
+
