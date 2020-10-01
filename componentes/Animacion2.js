@@ -9,8 +9,9 @@ const Animacion2 = () => {
     useEffect(()=>{
         Animated.timing(
             animacion, {
-                toValue: 450,
-                duration: 1000
+                toValue: 3,
+                duration: 2000,
+                useNativeDriver: true
             }
         ).start();
     }, []);
@@ -20,8 +21,10 @@ const Animacion2 = () => {
             style={[
                 styles.caja,
                 {
-                    width: animacion,
-                    height: animacion
+                   transform:[
+                       {scaleY: animacion},
+                       {scaleX: animacion}
+                   ]
                 }
             ]}
         >
@@ -32,8 +35,9 @@ const Animacion2 = () => {
 
 const styles = StyleSheet.create({
     caja: {
-        width: 100,
-        height: 100
+        width: 50,
+        height: 50,
+        backgroundColor: '#000'
     }
 });
 
